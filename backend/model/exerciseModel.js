@@ -2,9 +2,15 @@ const mongoose = require('mongoose')
 
 const exerciseSchema = mongoose.Schema(
     {
+        user: {
+            type: mongoose.Schema.Types.ObjectId,
+            required: true,
+            ref: 'User'
+
+        },
         text: {
             type: String,
-            required: true
+            required: [true, 'Please add a text value'],
         },
 
     },
