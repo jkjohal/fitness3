@@ -7,7 +7,7 @@ function ExerciseForm() {
 
     const dispatch = useDispatch()
 
-    const onSubmit = e => {
+    const onSubmit = (e) => {
         e.preventDefault()
 
         dispatch(createExercise({text}))

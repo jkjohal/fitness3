@@ -2,7 +2,7 @@ import {useEffect} from 'react'
 import {useNavigate} from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import ExerciseForm from '../components/ExerciseForm'
-import Spinner from '../components/Spinner'
+//import Spinner from '../components/Spinner'
 import { getExercises, reset } from '../features/exercises/exerciseSlice'
 import ExerciseItem from '../components/ExerciseItem'
 
@@ -29,9 +29,9 @@ function Dashboard() {
     }
     }, [user, navigate, isError, message, dispatch])
 
-    if (isLoading) {
-        return <Spinner />
-    }
+    //if (isLoading) {
+      //  return <Spinner />
+   // }
 
     return (
         <>
