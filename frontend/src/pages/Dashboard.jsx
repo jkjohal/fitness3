@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import ExerciseForm from '../components/ExerciseForm'
 import Spinner from '../components/Spinner'
 import { getExercises, reset } from '../features/exercises/exerciseSlice'
+import ExerciseItem from '../components/ExerciseItem'
 
 function Dashboard() {
     const navigate = useNavigate()
@@ -40,6 +41,17 @@ function Dashboard() {
         </section>
 
         <ExerciseForm />
+
+        <section className= "content">
+            { exercises.length > 0 ? (
+                <div className= "exercises">
+                    {exercises.map((exercise) => (
+                        <ExerciseItem key = {exercise._id} exercise={exercise}/>
+                    ))}
+                </div>
+            ) : (<h3> You have not created any workout entries</h3>) }
+        </section>
+
         </>
     )
 }

@@ -26,9 +26,24 @@ const getExercises = async (token) => {
     return response.data
 }
 
+const deleteExercise = async (exerciseId, token) => {
+    const config = {
+        headers: {
+            Authorization: `Bearer ${token}`
+        }
+    }
+
+    const response = await axios.delete(API_URL + exerciseId, config)
+
+    return response.data
+}
+
+
+
 const exerciseService = {
     createExercise,
-    getExercises
+    getExercises,
+    deleteExercise
 }
 
 export default exerciseService
