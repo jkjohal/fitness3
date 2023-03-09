@@ -3,8 +3,10 @@ const router = express.Router()
 const {getExercises, setExercise, updateExercise, deleteExercise } = require('../controllers/exerciseController')
 
 
-router.route('/').get(getExercises).post(setExercise)
-router.route('/:id').delete(deleteExercise).put(updateExercise)
+const {protect} = require('../middleware/authMiddleware')
+
+router.route('/').get(protect, getExercises).post(protect, setExercise)
+router.route('/:id').delete(protect, deleteExercise).put(protect, updateExercise)
 
 
 
