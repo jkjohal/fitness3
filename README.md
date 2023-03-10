@@ -1,5 +1,5 @@
-# Fitness Tracker App
-This fitness tracker app is a web-based application designed to help users keep track of their fitness activities, such as workouts and meals, and monitor their progress towards their fitness goals. The app is built using React, Node.js, MongoDB, Mongoose, GraphQL, CSS, Apollo Client, and is also a Progressive Web App.
+# Fitness Journal 3.0 
+This fitness journal 3.0 app is a web-based application designed to help users keep track of their fitness activities, such as workouts and meals, and monitor their progress towards their fitness goals. The app is built using React, Node.js, MongoDB, Mongoose, GraphQL, CSS, Apollo Client, and is also a Progressive Web App.
 
 ![image](https://user-images.githubusercontent.com/112898278/221742811-b5be6dfe-73b5-454d-9f83-6519334c0477.png)
 
@@ -29,7 +29,7 @@ The fitness tracker app is built using the following technologies:
 ## Installation
 To install the fitness tracker app, follow these steps:
 
-- Clone the repository to your local machine using the following command: `git clone https://github.com/jkjohal/fitness-tracker.git`
+- Clone the repository to your local machine using the following command: `git clone https://github.com/jkjohal/fitness3`
 - Navigate to the project directory using the `cd` command.
 Run the following command to install the dependencies: npm install
 Start the app by running the following command: npm start
