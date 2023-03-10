@@ -40,8 +40,8 @@ The fitness tracker app is a robust and user-friendly application that makes it 
 
 ## Contributors
 
-- Dionne Angeles
-- Jeevan Johal
+- Dionne Angeles https://github.com/ZG4219
+- Jeevan Johal https://github.com/jkjohal
 
 
 
